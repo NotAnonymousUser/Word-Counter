@@ -8,7 +8,9 @@ const answer = await inquirer.prompt({
   message: "Enter words you wanted to be count",
 });
 
-let counter = answer.sentence.trim().split(" ");
-let wordCounter = counter.length;
+let words = answer.sentence.trim().split(" ");
+let wordCounter = words.length;
 
-console.log(`Your sentence has ${wordCounter} words`);
+
+console.log(`\nYour sentence has ${wordCounter} words`);
+
